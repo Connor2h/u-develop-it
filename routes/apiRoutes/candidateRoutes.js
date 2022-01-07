@@ -3,7 +3,7 @@ const router = express.Router();
 const db = require('../../db/connection');
 const inputCheck = require('../../utils/inputCheck');
 
-//Get all candidates and their party affiliation
+    //Get all candidates and their party affiliation
 router.get('/candidates', (req, res) => {
     const sql = `SELECT candidates.*, parties.name 
                 AS party_name 
